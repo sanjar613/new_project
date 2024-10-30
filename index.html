@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>to do list</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">To Do list App</h1>
+      <div class="todo-app">
+        <div class="row">
+          
+          <input
+            class="input"
+            type="text"
+            id="input-box"
+            placeholder="Text input"
+          />
+      
+          <button onclick="addTask()">add</button>
+        </div>
+        <div class="select-container">
+          Filter by status:
+          <select class="select-box">
+            <option>All</option>
+            <option>Completed</option>
+            <option>in progress</option>
+          </select>
+        </div>
+        <div class="tasks" id="tasks">
+          <ul class="list-container">
+            <!-- rendered with js -->
+          </ul>
+        </div>
+        <h5 class="clear" style="cursor: pointer;">Clear all</h5>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

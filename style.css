@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #cecece;
+  padding: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 68px;
+  color: #0e73f6;
+  margin-bottom: 34px;
+  padding-top: 2rem;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 80px auto 20px;
+  padding: 40px 30px 30px;
+  border-radius: 10px;
+}
+
+/* =============== adding task ================ */
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 12px;
+}
+
+.input {
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  font-family: inherit;
+  flex-grow: 1;
+}
+
+button {
+  font-size: 16px;
+  cursor: pointer;
+  width: 70px;
+  height: 43px;
+  background: #4094f7;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid #e6e6e6;
+  padding: 0 16px;
+}
+
+/* ============ filter =============== */
+
+.select-container {
+  display: flex;
+  min-width: 100px;
+  height: 25px;
+  left: 20px;
+}
+
+.select-box {
+  position: relative;
+  border: 1px solid #898383;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 200;
+  padding: 2px 0 2px 10px;
+  margin-left: 12px;
+}
+.select-box option {
+  font-size: 12px;
+}
+
+/* ======================== */
+
+.list-container{
+  margin-top: 24px;
+}
+
+.task{
+  list-style: none;
+  padding: 12px 24px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.task-title{
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #5b5b5b;
+  background: transparent;
+}
+
+.task i {
+  font-size: 24px;
+}
+
+.clear {
+  text-align: center;
+  color: #4094f7;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
